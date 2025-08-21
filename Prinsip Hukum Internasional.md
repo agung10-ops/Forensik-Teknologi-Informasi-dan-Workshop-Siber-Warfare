@@ -1,5 +1,5 @@
 # Prinsip Umum Hukum Internasional
-Hukum Internasional adalah sekumpulan aturan hukum yang mengatur hubungan antara subjek-subjek hukum internasional, 
+  Hukum Internasional adalah sekumpulan aturan hukum yang mengatur hubungan antara subjek-subjek hukum internasional, 
 terutama negara, tetapi juga organisasi internasional, bahkan individu dalam konteks tertentu.
 Aturan ini disepakati dan diakui secara bersama untuk menjaga ketertiban, perdamaian, dan kerja sama internasional.
 Singkatnya, hukum internasional adalah aturan main yang disepakati dunia agar negara-negara dan subjek lain bisa hidup berdampingan secara damai, adil, dan tertib.
@@ -56,6 +56,10 @@ Singkatnya, hukum internasional adalah aturan main yang disepakati dunia agar ne
   - Negara-negara wajib bekerja sama untuk menciptakan perdamaian, keamanan, dan kesejahteraan dunia.
 
 # 👉 Prinsip-prinsip ini sebagian besar tercantum dalam Piagam PBB (United Nations Charter, 1945) dan diakui dalam praktik hukum internasional modern.
+
+Diagram Prinsip Hukum Internasional
+
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/c1f12f84-1d67-4549-8d0d-fef035971e3e" />
 
 # Dibuat Oleh 
   1. Serka Andi Kurniawan
