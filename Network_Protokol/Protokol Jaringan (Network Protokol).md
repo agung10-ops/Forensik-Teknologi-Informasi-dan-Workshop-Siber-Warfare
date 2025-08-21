@@ -68,3 +68,39 @@ Model TCP/IP adalah model yang praktis dan digunakan secara luas di internet. Me
 
 * Lapisan Gabungan: TCP/IP menggabungkan beberapa lapisan dari OSI untuk menyederhanakan proses.
 
+# Hubungan Antar Kedua Model
+Pada dasarnya, model TCP/IP adalah implementasi dari konsep-konsep yang ada di dalam model OSI. Model OSI memberikan panduan teoretis yang terperinci, sementara model TCP/IP adalah praktik nyata yang mendominasi dunia jaringan modern.
+<img width="3892" height="3226" alt="image" src="https://github.com/user-attachments/assets/f3f92524-5d6d-4a0a-bdf0-dff9ff0438dc" />
+<img width="1536" height="1024" alt="sketsa OSI  TCP IP" src="https://github.com/user-attachments/assets/8fa9842a-1ee0-456f-81f2-e283a8fdb0df" />
+
+# Alur Kerja Internet
+Internet bekerja melalui serangkaian tahapan agar data bisa dikirim dari satu perangkat ke perangkat lain di seluruh dunia:
+
+1. Perangkat Pengguna (Client)
+  - Misalnya komputer, HP, atau laptop yang digunakan untuk mengakses internet.
+  - Saat pengguna mengetik alamat website, perangkat akan membuat permintaan (request).
+2. Internet Service Provider (ISP)
+  - Permintaan dari perangkat akan dikirim ke penyedia layanan internet (Telkomsel, Indihome, Biznet, dll.).
+  - ISP memberikan akses ke jaringan internet global.
+3. DNS (Domain Name System)
+  - DNS berfungsi menerjemahkan alamat website (misalnya www.google.com) menjadi alamat IP (contoh: 142.250.190.78).
+  - Karena komputer berkomunikasi menggunakan IP, bukan nama domain.
+4. Router & Jaringan Internet
+  - Data akan melewati beberapa router di dalam internet (seperti jalan raya data).
+  - Router akan mencari jalur tercepat menuju server tujuan.
+5. Server Tujuan
+  - Server yang menyimpan data/website menerima permintaan.
+  - Server mengolah dan mengirimkan balasan (response) kembali ke client.
+6. Perjalanan Balik
+  - Data dari server melewati jalur router, ISP, hingga kembali ke perangkat pengguna.
+7. Tampilan di Browser
+  - Data akhirnya diterima oleh browser (Chrome, Edge, Firefox), lalu ditampilkan dalam bentuk halaman web.
+
+# Diagram Alur Kerja Internet
+<img width="1536" height="1024" alt="alur kerja internet" src="https://github.com/user-attachments/assets/3d1edca2-cdf2-4b2e-8379-ba996638bc95" />
+
+# Dibuat Oleh 
+  - Agung Kurniawan/Sertu Mar
+
+
+
