@@ -68,3 +68,4 @@ Model TCP/IP adalah model yang praktis dan digunakan secara luas di internet. Me
 
 * Lapisan Gabungan: TCP/IP menggabungkan beberapa lapisan dari OSI untuk menyederhanakan proses.
 
+<img width="1396" height="699" alt="image" src="https://github.com/user-attachments/assets/55a76290-76fd-4485-9cad-a50b5701a2bb" />
