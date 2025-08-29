@@ -10,10 +10,10 @@ Dengan kata lain, jalur komunikasi dari satu jaringan ke jaringan lain ditentuka
 Router tidak akan melakukan perubahan rute secara otomatis meskipun terjadi perubahan pada jaringan, kecuali administrator mengubahnya secara langsung.
 
 # Karakteristik Routing Statis
-    1.  **Manual** – Rute ditambahkan, dihapus, atau diubah secara manual oleh administrator.
-    2.	**Tetap (Fixed)** – Jalur yang telah ditentukan tidak akan berubah kecuali ada konfigurasi ulang.
-    3.	**Ringan** – Tidak membebani CPU dan memori router karena tidak perlu melakukan perhitungan atau pertukaran tabel routing dengan router lain.
-    4.	**Kontrol penuh** – Administrator memiliki kendali penuh terhadap jalur lalu lintas data.
+    1.  Manual – Rute ditambahkan, dihapus, atau diubah secara manual oleh administrator.
+    2.	Tetap (Fixed) – Jalur yang telah ditentukan tidak akan berubah kecuali ada konfigurasi ulang.
+    3.	Ringan – Tidak membebani CPU dan memori router karena tidak perlu melakukan perhitungan atau pertukaran tabel routing dengan router lain.
+    4.	Kontrol penuh – Administrator memiliki kendali penuh terhadap jalur lalu lintas data.
 
 # Perancangan Topologi Jaringan
 Dalam perancangan Topologi ini menggunakan: 
@@ -28,51 +28,51 @@ Kemudian untuk menghubungkan Pc dengan Router menggunakan kabel _Copper Straight
       Subnet Mask: 255.255.255.0
       Default Gateway: 192.168.1.1
       
-      <img width="874" height="664" alt="Screenshot 2025-08-29 222105" src="https://github.com/user-attachments/assets/ed280932-8a74-4c01-be53-a5772486083a" />
+<img width="874" height="664" alt="Screenshot 2025-08-29 222105" src="https://github.com/user-attachments/assets/ed280932-8a74-4c01-be53-a5772486083a" />
 
   💻 **_PC 2_** 
       IP Address: 192.168.3.2
       Subnet Mask: 255.255.255.0
       Default Gateway: 192.168.3.1
 
-      <img width="874" height="668" alt="Screenshot 2025-08-29 222249" src="https://github.com/user-attachments/assets/f63254d6-c268-4ac9-b115-11ee2a97ca1c" />
+<img width="874" height="668" alt="Screenshot 2025-08-29 222249" src="https://github.com/user-attachments/assets/f63254d6-c268-4ac9-b115-11ee2a97ca1c" />
 
   📡 **_Router 1_**
       **Router 1 terhubung ke PC 1 melalui GigabitEthernet0/0**
 
-      <img width="877" height="394" alt="Screenshot 2025-08-29 223806" src="https://github.com/user-attachments/assets/43d753ec-281d-4c4a-99e1-001af8d8b8d3" />
+<img width="877" height="394" alt="Screenshot 2025-08-29 223806" src="https://github.com/user-attachments/assets/43d753ec-281d-4c4a-99e1-001af8d8b8d3" />
 
       **Router 1 terhubung ke Router 2 melalui GigabitEthernet0/1**
 
-      <img width="877" height="388" alt="Screenshot 2025-08-29 223837" src="https://github.com/user-attachments/assets/9e13067e-0c90-4b5b-8e31-f20f0b091f2d" />
+<img width="877" height="388" alt="Screenshot 2025-08-29 223837" src="https://github.com/user-attachments/assets/9e13067e-0c90-4b5b-8e31-f20f0b091f2d" />
 
      **Routing Statis Router 1**
 
-      <img width="873" height="591" alt="Screenshot 2025-08-29 225144" src="https://github.com/user-attachments/assets/d554039b-8f98-4466-9a25-b2686cde25cf" />
+<img width="873" height="591" alt="Screenshot 2025-08-29 225144" src="https://github.com/user-attachments/assets/d554039b-8f98-4466-9a25-b2686cde25cf" />
 
       **Router 2 terhubung ke PC 2 melalui GigabitEthernet0/0**
 
-      <img width="870" height="589" alt="Screenshot 2025-08-29 225305" src="https://github.com/user-attachments/assets/b5ac5ee0-4a13-41cb-8613-fb6582dc7bc3" />
+<img width="870" height="589" alt="Screenshot 2025-08-29 225305" src="https://github.com/user-attachments/assets/b5ac5ee0-4a13-41cb-8613-fb6582dc7bc3" />
 
       **Router 2 terhubung ke Router 1 melalui GigabitEthernet0/1**
 
-      <img width="871" height="589" alt="Screenshot 2025-08-29 225441" src="https://github.com/user-attachments/assets/eb5fbce5-283b-4931-bbc4-6ba5e0a8f4da" />
+<img width="871" height="589" alt="Screenshot 2025-08-29 225441" src="https://github.com/user-attachments/assets/eb5fbce5-283b-4931-bbc4-6ba5e0a8f4da" />
 
       **Routing Statis Router 2**
 
-      <img width="874" height="590" alt="Screenshot 2025-08-29 225631" src="https://github.com/user-attachments/assets/eb800c81-5203-4206-99a7-7ef021ec7aca" />
+<img width="874" height="590" alt="Screenshot 2025-08-29 225631" src="https://github.com/user-attachments/assets/eb800c81-5203-4206-99a7-7ef021ec7aca" />
 
 # Pengujian Koneksi Antar Perangkat
 Pengujian kita lakukan dengan ping antar perangkat
   **PC 1 ke PC 2**
 
-  <img width="872" height="524" alt="Screenshot 2025-08-29 230122" src="https://github.com/user-attachments/assets/029bc3d9-1688-4f57-bf69-69c13df8c12e" />
+<img width="872" height="524" alt="Screenshot 2025-08-29 230122" src="https://github.com/user-attachments/assets/029bc3d9-1688-4f57-bf69-69c13df8c12e" />
 
   Hasil pengujian ping dari PC 1 ke PC 2 (192.168.3.2) berhasil dengan baik.
 
   **PC 2 ke PC 1**
 
-  <img width="876" height="449" alt="Screenshot 2025-08-29 230430" src="https://github.com/user-attachments/assets/9a0498fb-16c6-4bca-9c48-5ae4b4a7d7f0" />
+<img width="876" height="449" alt="Screenshot 2025-08-29 230430" src="https://github.com/user-attachments/assets/9a0498fb-16c6-4bca-9c48-5ae4b4a7d7f0" />
 
   Hasil pengujian ping dari PC 2 ke PC 1 (192.168.1.2) berhasil dengan baik.
 
