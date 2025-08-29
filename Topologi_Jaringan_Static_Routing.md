@@ -44,27 +44,28 @@ Kemudian untuk menghubungkan Pc dengan Router menggunakan kabel _Copper Straight
 <img width="874" height="668" alt="Screenshot 2025-08-29 222249" src="https://github.com/user-attachments/assets/f63254d6-c268-4ac9-b115-11ee2a97ca1c" />
 
   📡 **_Router 1_**
-      **Router 1 terhubung ke PC 1 melalui GigabitEthernet0/0**
+  
+**Router 1 terhubung ke PC 1 melalui GigabitEthernet0/0**
 
 <img width="877" height="394" alt="Screenshot 2025-08-29 223806" src="https://github.com/user-attachments/assets/43d753ec-281d-4c4a-99e1-001af8d8b8d3" />
 
-      **Router 1 terhubung ke Router 2 melalui GigabitEthernet0/1**
+**Router 1 terhubung ke Router 2 melalui GigabitEthernet0/1**
 
 <img width="877" height="388" alt="Screenshot 2025-08-29 223837" src="https://github.com/user-attachments/assets/9e13067e-0c90-4b5b-8e31-f20f0b091f2d" />
 
-     **Routing Statis Router 1**
+**Routing Statis Router 1**
 
 <img width="873" height="591" alt="Screenshot 2025-08-29 225144" src="https://github.com/user-attachments/assets/d554039b-8f98-4466-9a25-b2686cde25cf" />
 
-      **Router 2 terhubung ke PC 2 melalui GigabitEthernet0/0**
+**Router 2 terhubung ke PC 2 melalui GigabitEthernet0/0**
 
 <img width="870" height="589" alt="Screenshot 2025-08-29 225305" src="https://github.com/user-attachments/assets/b5ac5ee0-4a13-41cb-8613-fb6582dc7bc3" />
 
-      **Router 2 terhubung ke Router 1 melalui GigabitEthernet0/1**
+ **Router 2 terhubung ke Router 1 melalui GigabitEthernet0/1**
 
 <img width="871" height="589" alt="Screenshot 2025-08-29 225441" src="https://github.com/user-attachments/assets/eb5fbce5-283b-4931-bbc4-6ba5e0a8f4da" />
 
-      **Routing Statis Router 2**
+**Routing Statis Router 2**
 
 <img width="874" height="590" alt="Screenshot 2025-08-29 225631" src="https://github.com/user-attachments/assets/eb800c81-5203-4206-99a7-7ef021ec7aca" />
 
@@ -84,17 +85,17 @@ Pengujian kita lakukan dengan ping antar perangkat
 
 
 # Mekanisme Alur
-    **PC 1 → Router 1**
+**PC 1 → Router 1**
       •	Src IP (Sumber): 192.168.1.2 (IP PC1)
       •	Dest IP (Tujuan): 192.168.3.2 (IP PC2)
       •	Paket data keluar dari PC1 menuju default gateway 192.168.1.1 (Router 1).
-    **Router 1 → Router 2**
+**Router 1 → Router 2**
       •	Saat paket masuk ke Router 1, alamat sumber (Src IP) berubah menjadi IP interface Router 1 yang terhubung ke Router 2, yaitu 192.168.2.1.
       •	Dest IP tetap 192.168.3.2 (karena tujuan akhirnya adalah PC2).
-    **Router 2 → PC 2**
+**Router 2 → PC 2**
       •	Paket diteruskan ke Router 2, dan sekarang Src IP berubah lagi menjadi 192.168.3.1 (IP interface Router 2 yang terhubung ke jaringan PC2).
       •	Dest IP tetap 192.168.3.2.
-    **PC 2 menerima paket**
+**PC 2 menerima paket**
       •	PC2 dengan alamat 192.168.3.2 akhirnya menerima paket tersebut.
       
 # Kesimpulan
