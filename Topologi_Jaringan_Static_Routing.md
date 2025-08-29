@@ -17,9 +17,13 @@ Router tidak akan melakukan perubahan rute secara otomatis meskipun terjadi peru
 
 # Perancangan Topologi Jaringan
 Dalam perancangan Topologi ini menggunakan: 
+
     2 buah Router yang saling terhubung.  
+    
     PC 1 terhubung ke Router 1.
+    
     PC 2 Terhubung ke Router 2. 
+    
 Kemudian untuk menghubungkan Pc dengan Router menggunakan kabel _Copper Straight-Through_ dan Roter ke Router menggunakan kabel _Copper Cross-Over_
 
 # Konfigurasi IP Address
@@ -86,17 +90,33 @@ Pengujian kita lakukan dengan ping antar perangkat
 
 # Mekanisme Alur
 **PC 1 → Router 1**
+
       •	Src IP (Sumber): 192.168.1.2 (IP PC1)
+      
       •	Dest IP (Tujuan): 192.168.3.2 (IP PC2)
+      
       •	Paket data keluar dari PC1 menuju default gateway 192.168.1.1 (Router 1).
+      
 **Router 1 → Router 2**
+
       •	Saat paket masuk ke Router 1, alamat sumber (Src IP) berubah menjadi IP interface Router 1 yang terhubung ke Router 2, yaitu 192.168.2.1.
+      
       •	Dest IP tetap 192.168.3.2 (karena tujuan akhirnya adalah PC2).
+      
 **Router 2 → PC 2**
+
       •	Paket diteruskan ke Router 2, dan sekarang Src IP berubah lagi menjadi 192.168.3.1 (IP interface Router 2 yang terhubung ke jaringan PC2).
+      
       •	Dest IP tetap 192.168.3.2.
+      
 **PC 2 menerima paket**
+
       •	PC2 dengan alamat 192.168.3.2 akhirnya menerima paket tersebut.
+
+# Tampilan Topologi Jaringan
+
+<img width="955" height="740" alt="Screenshot 2025-08-29 233933" src="https://github.com/user-attachments/assets/6798e83f-1077-47ba-9899-9aeb710284bf" />
+
       
 # Kesimpulan
 Routing statis merupakan metode routing yang dilakukan dengan cara mengatur jalur komunikasi jaringan secara manual oleh administrator. 
