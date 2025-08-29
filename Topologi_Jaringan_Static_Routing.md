@@ -124,10 +124,15 @@ Metode ini sangat cocok digunakan pada jaringan dengan skala kecil hingga meneng
 
 berdasarkan pengujian di atas dapat disimpulkan :
 Topologi jaringan ini berhasil menghubungkan dua subnet berbeda (192.168.1.0/24 dan 192.168.3.0/24) menggunakan dua router sebagai perantara.
+
     • Penerapan Routing Statis pada kedua Router berhasil.
+    
     • Pastikan Konfigurasi IP Address, Router interface, Default Gateway dan routing statis sudah benar, sehingga setiap perangkat dapat terhubung pada jaringan.
+    
     • Hasil ujicoba dengan ping dari PC 1 ke PC 2 (dan sebaliknya) berhasil dengan baik dengan adanya reply dari alamat tujuan.
+    
     • Dengan Konfigurasi Routing Statis komunikasi dapat berjalan lancar dan stabil.
+
 
 # Dibuat Oleh 
 Agung Kurniawan 
