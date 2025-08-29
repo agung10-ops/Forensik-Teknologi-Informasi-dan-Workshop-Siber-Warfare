@@ -25,14 +25,18 @@ Kemudian untuk menghubungkan Pc dengan Router menggunakan kabel _Copper Straight
 # Konfigurasi IP Address
   💻 **_PC 1_** 
       IP Address: 192.168.1.2
+      
       Subnet Mask: 255.255.255.0
+      
       Default Gateway: 192.168.1.1
       
 <img width="874" height="664" alt="Screenshot 2025-08-29 222105" src="https://github.com/user-attachments/assets/ed280932-8a74-4c01-be53-a5772486083a" />
 
   💻 **_PC 2_** 
       IP Address: 192.168.3.2
+      
       Subnet Mask: 255.255.255.0
+      
       Default Gateway: 192.168.3.1
 
 <img width="874" height="668" alt="Screenshot 2025-08-29 222249" src="https://github.com/user-attachments/assets/f63254d6-c268-4ac9-b115-11ee2a97ca1c" />
