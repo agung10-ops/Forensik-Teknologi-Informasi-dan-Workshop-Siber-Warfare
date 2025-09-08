@@ -98,3 +98,6 @@ Misal: PC1 (192.168.1.1) ingin ping ke PC5 (192.168.3.2)
 2. Router hanya bisa mengirim paket ke jaringan yang ada di tabel routing.
 3. Jalur paket tetap sesuai konfigurasi (tidak ada perhitungan otomatis).
 4. Jika ada perubahan topologi (misalnya link putus), static routing harus diperbarui manual.
+
+# ✍️️ Author
+_Static Routing oleh Agung Kurniawan_
