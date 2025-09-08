@@ -1,7 +1,8 @@
 # 🖧 Topologi Routing RIP (3 Router, 3 LAN)
+
 ## Pendahuluan
 
-    RIP (Routing Information Protocol) adalah protokol routing yang digunakan untuk bertukar informasi 
+RIP (Routing Information Protocol) adalah protokol routing yang digunakan untuk bertukar informasi 
 routing antara router dinamis pada Protokol IP atau IPX. Routing Information Protocol (RIP) adalah salah satu Routing.
 Protocol yang menggunakan Distance Vector, oleh karena itu RIP menggunakan jumlah Hop untuk menentukan 
 cara terbaik ke sebuah alamat jaringan tertentu, tetapi RIP secara default memiliki jumlah hop maksimum yaitu 15 Hop. 
@@ -9,14 +10,14 @@ Oleh karena itu, Hop ke-16 dan seterusnya akan dianggap tidak terjangkau (Unreac
 Oleh karena itu juga, RIP dapat bekerja dengan baik di jenis jaringan yang kecil, 
 tetapi RIP tidak efisien pada network yang besar atau pada jaringan yang memiliki jumlah Router yang banyak.
 
-# ⚙️ Routing yang Digunakan: RIP (Routing Information Protocol)
+## ⚙️ Routing yang Digunakan: RIP (Routing Information Protocol)
 
 RIP adalah protokol distance-vector routing.
 Masing-masing router akan bertukar tabel routing dengan router tetangganya secara periodik.
 Metode yang dipakai: hop count (jumlah lompatan) untuk menentukan jalur terpendek.
 Maksimum hop di RIP adalah 15 → lebih dari itu dianggap unreachable.
 
-# 🔎 Struktur Jaringan
+## 🔎 Struktur Jaringan
 
 **Router 1**
 * Terhubung ke LAN 192.168.1.0/24
@@ -86,7 +87,7 @@ Maksimum hop di RIP adalah 15 → lebih dari itu dianggap unreachable.
 
 **gambar 10.** Konfigurasi router 3 RIP Routing
 
-# 📡 Cara Kerja Routing RIP
+## 📡 Cara Kerja Routing RIP
 
 1. Router1 hanya tahu **192.168.1.0/24** dan **10.10.10.0/30.**
   → Dengan RIP, ia akan diberitahu bahwa ada jaringan **192.168.2.0/24** dan **192.168.3.0/24** lewat Router2.
@@ -99,7 +100,7 @@ Maksimum hop di RIP adalah 15 → lebih dari itu dianggap unreachable.
 
 4. RIP akan **secara otomatis update routing table setiap 30 detik,** sehingga jika ada perubahan, rute baru bisa didistribusikan.
 
-# 🔍 Pengujian
+## 🔍 Pengujian
 
   * Dari **PC1 (192.168.1.1)** lakukan ping **192.168.3.2 (PC6).**
     Jalur: PC1 → Switch1 → Router1 → Router2 → Router3 → Switch3 → PC6.
@@ -118,7 +119,7 @@ Maksimum hop di RIP adalah 15 → lebih dari itu dianggap unreachable.
 
   * Semua harus saling terhubung jika konfigurasi benar.
 
-# ✅ Kesimpulan
+## ✅ Kesimpulan
 
 1. Topologi ini menggunakan 3 router dengan RIP sebagai protokol routing dinamis.
 2. Tujuannya agar semua jaringan LAN **(192.168.1.0, 192.168.2.0, 192.168.3.0)** bisa saling terhubung.
