@@ -35,27 +35,26 @@ Router secara pintar bisa mengirimkan paket meskipun untuk host pada jaringan la
   
 | **gambar 1.** PC1 dengan alamat ip **192.168.1.1** default gateway 192.168.1.10. | **gambar 2.** PC2 dengan alamat ip **192.168.1.2** default gateway 192.168.1.10. |
 |------------|------------|
-| <img width="877" height="667" alt="gambar 1" src="https://github.com/user-attachments/assets/aa4c83b0-4edd-4e21-9ea5-d12aa3027cb5" /> | <img width="872" height="664" alt="gambar 2" src="https://github.com/user-attachments/assets/4d99ec06-39b8-4b06-98ff-41f93ce519ad" />|
+| <img width="877" height="667" alt="gambar 1" src="https://github.com/user-attachments/assets/aa4c83b0-4edd-4e21-9ea5-d12aa3027cb5" /> | <img width="872" height="664" alt="gambar 2" src="https://github.com/user-attachments/assets/4d99ec06-39b8-4b06-98ff-41f93ce519ad" /> |
 
 | **gambar 3.** PC3 dengan alamat ip **192.168.2.1** default gateway 192.168.2.10. | **gambar 4.** PC4 dengan alamat ip **192.168.2.2** default gateway 192.168.2.10. |
 |------------|------------|
-| <img width="877" height="668" alt="gambar 3" src="https://github.com/user-attachments/assets/56ce40fa-c97b-4a19-aec0-0d3442940be4" />
-| <img width="873" height="668" alt="gambar 4" src="https://github.com/user-attachments/assets/4886240a-1d96-4c47-aa19-04e972b44fbd" />
-|
+| <img width="877" height="668" alt="gambar 3" src="https://github.com/user-attachments/assets/56ce40fa-c97b-4a19-aec0-0d3442940be4" /> | <img width="873" height="668" alt="gambar 4" src="https://github.com/user-attachments/assets/4886240a-1d96-4c47-aa19-04e972b44fbd" /> |
 
-          
-
-
-          
-
-**gambar 5.** PC5 dengan alamat ip **192.168.3.1** default gateway 192.168.3.10.            **gambar 6.** PC6 dengan alamat ip **192.168.3.2** default gateway 192.168.3.10.
+| **gambar 5.** PC5 dengan alamat ip **192.168.3.1** default gateway 192.168.3.10. | **gambar 6.** PC6 dengan alamat ip **192.168.3.2** default gateway 192.168.3.10. |
+|------------|------------|
+| <img width="876" height="665" alt="gambar 5" src="https://github.com/user-attachments/assets/7b413a4a-20b0-4026-b725-d44907ec133e" /> | <img width="877" height="665" alt="gambar 6" src="https://github.com/user-attachments/assets/3b485e60-d9ec-4235-9ba7-e39b44740f13" /> |       
 
 ## Konfigurasi Statik Routing
 
-<img width="874" height="589" alt="image" src="https://github.com/user-attachments/assets/156125c2-1dc8-493d-b02c-8d6af3b90283" />    <img width="877" height="591" alt="image" src="https://github.com/user-attachments/assets/04ffcb0e-9657-4b9c-a6ef-a7d04e1d2e22" />
+| **gambar 7.** Konfigurasi router 1 Fa0/0  | **gambar 8.** Konfigurasi router 1 S2/0  |
+|------------|------------|
+| <img width="874" height="589" alt="image" src="https://github.com/user-attachments/assets/156125c2-1dc8-493d-b02c-8d6af3b90283" /> | <img width="877" height="591" alt="image" src="https://github.com/user-attachments/assets/04ffcb0e-9657-4b9c-a6ef-a7d04e1d2e22" /> |              
 
-**gambar 7.** Konfigurasi router 1 Fa0/0                  **gambar 8.** Konfigurasi router 1 S2/0  
+| **gambar 9.** Konfigurasi router 1 Statik Routing   | **gambar 10.** Konfigurasi router 2 Fa0/0   |
+|------------|------------|
+| <img width="877" height="590" alt="image" src="https://github.com/user-attachments/assets/d06a0173-462f-452b-922f-75455bfa79a0" /> | <img width="873" height="591" alt="image" src="https://github.com/user-attachments/assets/14bd985e-ca66-4cc7-a6ce-ffddad999980" /> |  
 
-<img width="877" height="590" alt="image" src="https://github.com/user-attachments/assets/d06a0173-462f-452b-922f-75455bfa79a0" />    <img width="873" height="591" alt="image" src="https://github.com/user-attachments/assets/14bd985e-ca66-4cc7-a6ce-ffddad999980" />
+    
 
-**gambar 9.** Konfigurasi router 1 Statik Routing         **gambar 10.** Konfigurasi router 2 Fa0/0   
+          
