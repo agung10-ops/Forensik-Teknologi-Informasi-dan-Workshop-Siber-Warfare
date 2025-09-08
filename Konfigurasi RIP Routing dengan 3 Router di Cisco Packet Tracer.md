@@ -1,5 +1,8 @@
 # 🖧 Topologi Routing RIP (3 Router, 3 LAN)
 
+<img width="1040" height="638" alt="Screenshot 2025-09-08 100741" src="https://github.com/user-attachments/assets/553ec334-cb17-45eb-92dc-9327866474af" />
+
+
 ## Pendahuluan
 
 RIP (Routing Information Protocol) adalah protokol routing yang digunakan untuk bertukar informasi 
