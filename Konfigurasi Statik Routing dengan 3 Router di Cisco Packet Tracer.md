@@ -37,14 +37,16 @@ Router secara pintar bisa mengirimkan paket meskipun untuk host pada jaringan la
 |------------|------------|
 | <img width="877" height="667" alt="gambar 1" src="https://github.com/user-attachments/assets/aa4c83b0-4edd-4e21-9ea5-d12aa3027cb5" /> | <img width="872" height="664" alt="gambar 2" src="https://github.com/user-attachments/assets/4d99ec06-39b8-4b06-98ff-41f93ce519ad" />|
 
+| **gambar 3.** PC3 dengan alamat ip **192.168.2.1** default gateway 192.168.2.10. | **gambar 4.** PC4 dengan alamat ip **192.168.2.2** default gateway 192.168.2.10. |
+|------------|------------|
+| <img width="877" height="668" alt="gambar 3" src="https://github.com/user-attachments/assets/56ce40fa-c97b-4a19-aec0-0d3442940be4" />
+| <img width="873" height="668" alt="gambar 4" src="https://github.com/user-attachments/assets/4886240a-1d96-4c47-aa19-04e972b44fbd" />
+|
 
           
 
-<img width="877" height="668" alt="image" src="https://github.com/user-attachments/assets/d75123e5-a5cf-4de3-90b4-deaa4011c838" />    <img width="873" height="668" alt="image" src="https://github.com/user-attachments/assets/c7e1980a-b36f-43e2-9ae6-241148bdd5db" />
 
-**gambar 3.** PC3 dengan alamat ip **192.168.2.1** default gateway 192.168.2.10.            **gambar 4.** PC4 dengan alamat ip **192.168.2.2** default gateway 192.168.2.10.
-
-<img width="876" height="665" alt="image" src="https://github.com/user-attachments/assets/66d0faa3-7737-46b1-bb2c-7d46ad914002" />    <img width="877" height="665" alt="image" src="https://github.com/user-attachments/assets/54e66921-5a09-44f0-a75e-0ec3e0657355" />
+          
 
 **gambar 5.** PC5 dengan alamat ip **192.168.3.1** default gateway 192.168.3.10.            **gambar 6.** PC6 dengan alamat ip **192.168.3.2** default gateway 192.168.3.10.
 
