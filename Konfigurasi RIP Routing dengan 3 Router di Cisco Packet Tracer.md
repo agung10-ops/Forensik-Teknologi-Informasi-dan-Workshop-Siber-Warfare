@@ -1,5 +1,6 @@
 # 🖧 Topologi Routing RIP (3 Router, 3 LAN)
 ## Pendahuluan
+
     RIP (Routing Information Protocol) adalah protokol routing yang digunakan untuk bertukar informasi 
 routing antara router dinamis pada Protokol IP atau IPX. Routing Information Protocol (RIP) adalah salah satu Routing
     Protocol yang menggunakan Distance Vector, oleh karena itu RIP menggunakan jumlah Hop untuk menentukan 
@@ -9,12 +10,14 @@ Oleh karena itu juga, RIP dapat bekerja dengan baik di jenis jaringan yang kecil
 tetapi RIP tidak efisien pada network yang besar atau pada jaringan yang memiliki jumlah Router yang banyak.
 
 # ⚙️ Routing yang Digunakan: RIP (Routing Information Protocol)
+
 RIP adalah protokol distance-vector routing.
 Masing-masing router akan bertukar tabel routing dengan router tetangganya secara periodik.
 Metode yang dipakai: hop count (jumlah lompatan) untuk menentukan jalur terpendek.
 Maksimum hop di RIP adalah 15 → lebih dari itu dianggap unreachable.
 
 # 🔎 Struktur Jaringan
+
 **Router 1**
 * Terhubung ke LAN 192.168.1.0/24
     PC1: 192.168.1.1
