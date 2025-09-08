@@ -35,7 +35,8 @@ Router secara pintar bisa mengirimkan paket meskipun untuk host pada jaringan la
   
 | Topologi 1 | Topologi 2 |
 |------------|------------|
-| ![Topologi1](gambar 1.png) | ![Topologi2](gambar 2.png) |
+| <img width="877" height="667" alt="gambar 1" src="https://github.com/user-attachments/assets/aa4c83b0-4edd-4e21-9ea5-d12aa3027cb5" /> | <img width="872" height="664" alt="gambar 2" src="https://github.com/user-attachments/assets/4d99ec06-39b8-4b06-98ff-41f93ce519ad" />
+|
 | **gambar 1.** PC1 dengan alamat ip **192.168.1.1** default gateway 192.168.1.10.   | **gambar 2.** PC2 dengan alamat ip **192.168.1.2** default gateway 192.168.1.10.|
 
           
