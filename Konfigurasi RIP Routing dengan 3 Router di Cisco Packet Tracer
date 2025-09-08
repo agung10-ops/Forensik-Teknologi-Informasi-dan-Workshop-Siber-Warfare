@@ -1,5 +1,5 @@
-🖧 Topologi Routing RIP (3 Router, 3 LAN)
-
+# 🖧 Topologi Routing RIP (3 Router, 3 LAN)
+# Pendahuluan
 RIP (Routing Information Protocol)
   adalah protokol routing yang digunakan untuk bertukar informasi routing antara router dinamis pada Protokol IP atau IPX. 
 Routing Information Protocol (RIP) adalah salah satu Routing
