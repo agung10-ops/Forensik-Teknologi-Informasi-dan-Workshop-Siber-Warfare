@@ -32,8 +32,8 @@ Router secara pintar bisa mengirimkan paket meskipun untuk host pada jaringan la
 ## Konfigurasi PC
 
 **Pastikan** setiap PC punya default gateway ke alamat router pada jaringannya 
-
-<img width="877" height="667" alt="image" src="https://github.com/user-attachments/assets/13fbc64a-cd9e-4b1a-bf78-b6f8ca1d5c82" />    <img width="872" height="664" alt="image" src="https://github.com/user-attachments/assets/9dc2dc0d-a8d4-4d5c-a201-6a5435224e3f" />
+  
+<img width="877" height="667" alt="image" src="https://github.com/user-attachments/assets/13fbc64a-cd9e-4b1a-bf78-b6f8ca1d5c82" />     <img width="872" height="664" alt="image" src="https://github.com/user-attachments/assets/9dc2dc0d-a8d4-4d5c-a201-6a5435224e3f" />
 
 **gambar 1.** PC1 dengan alamat ip **192.168.1.1** default gateway 192.168.1.10.            **gambar 2.** PC2 dengan alamat ip **192.168.1.2** default gateway 192.168.1.10.
 
