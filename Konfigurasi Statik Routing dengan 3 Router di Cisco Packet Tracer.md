@@ -55,6 +55,46 @@ Router secara pintar bisa mengirimkan paket meskipun untuk host pada jaringan la
 |------------|------------|
 | <img width="877" height="590" alt="image" src="https://github.com/user-attachments/assets/d06a0173-462f-452b-922f-75455bfa79a0" /> | <img width="873" height="591" alt="image" src="https://github.com/user-attachments/assets/14bd985e-ca66-4cc7-a6ce-ffddad999980" /> |  
 
-    
+| **gambar 11.** Konfigurasi router 2 S2/0   | **gambar 12.** Konfigurasi router 2 S3/0   |
+|------------|------------|
+| <img width="874" height="593" alt="image" src="https://github.com/user-attachments/assets/a195a5fa-8c0b-4759-a761-530e238e1d15" /> | <img width="873" height="594" alt="image" src="https://github.com/user-attachments/assets/08267024-3c91-47ef-9172-1429d60924b3" /> |  
 
-          
+| **gambar 13.** Konfigurasi router 2 Statik Routing   | **gambar 14.** Konfigurasi router 3 Fa0/0  |
+|------------|------------|
+| <img width="871" height="547" alt="image" src="https://github.com/user-attachments/assets/d1f7182d-1807-4de7-8bce-13f509e339d3" /> | <img width="873" height="591" alt="image" src="https://github.com/user-attachments/assets/7c3a6032-2d0b-4afb-9230-edf9bffc6cb5" /> | 
+
+| **gambar 15.** Konfigurasi router 3 S2/0   | **gambar 16.** Konfigurasi router 3 Stattik Routing |
+|------------|------------|
+| <img width="871" height="591" alt="image" src="https://github.com/user-attachments/assets/d38c8396-a783-4e96-8daf-0351def67438" /> | <img width="872" height="550" alt="image" src="https://github.com/user-attachments/assets/98dc17a7-ad50-452e-bfd6-6af57915b377" /> | 
+
+## 🔎 3. Cara Kerja Static Routing (alur paket)
+
+Misal: PC1 (192.168.1.1) ingin ping ke PC5 (192.168.3.2)
+
+1. PC1 mengirim paket ke gateway Router1 (192.168.1.10).
+2. Router1 cek tabel routing:
+   - Tujuan 192.168.3.0/24 tidak ada di network langsung (connected).
+   - Router1 menemukan static route: 192.168.3.0/24 via 10.10.10.2.
+   - Router1 kirim paket ke Router2 (10.10.10.2).
+3. Router2 terima paket:
+   - Router2 tahu 192.168.3.0/24 harus lewat 20.20.20.2.
+   - Router2 forward paket ke Router3.
+4. Router3 terima paket:
+   - Router3 punya koneksi langsung ke LAN 192.168.3.0/24.
+   - Router3 kirim paket ke PC5.
+5. PC5 menerima paket, balas echo reply ke PC1 lewat jalur sebaliknya.
+
+## 🔎 Pengujian 
+
+  | Ujicoba Ping PC1 ke PC6 | Ujicoba Ping PC3 ke PC2 |
+|------------|------------|
+| <img width="874" height="346" alt="image" src="https://github.com/user-attachments/assets/19a09656-6ac4-4f5e-b3b6-0b6d83633bab" /> | <img width="874" height="346" alt="image" src="https://github.com/user-attachments/assets/572b7213-6aef-4e0a-ae85-f74b670f5b92" /> |
+| Dari PC1 (192.168.1.1) lakukan ping 192.168.3.2 (PC6). Jalur: PC1 → Switch1 → Router1 → Router2 → Router3 → Switch3 → PC6. | Dari PC3 (192.168.2.1) lakukan ping 192.168.1.2 (PC2). Jalur: PC3 → Router2 → Router1 → PC2. |
+
+
+## 🔎 5. Kesimpulan Cara Kerja Static Routing
+
+1. Administrator menentukan manual rute untuk jaringan yang tidak langsung terhubung.
+2. Router hanya bisa mengirim paket ke jaringan yang ada di tabel routing.
+3. Jalur paket tetap sesuai konfigurasi (tidak ada perhitungan otomatis).
+4. Jika ada perubahan topologi (misalnya link putus), static routing harus diperbarui manual.
