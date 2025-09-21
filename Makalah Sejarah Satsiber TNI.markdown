@@ -89,12 +89,7 @@ Proses pembentukan Satsiber TNI mencapai puncaknya pada 2017, sebagai respons la
 
 Satsiber TNI secara resmi diresmikan pada 13 Oktober 2017 oleh Panglima TNI Jenderal Gatot Nurmantyo di Aula Gatot Subroto, Mabes TNI, Cilangkap, Jakarta Timur. Peresmian ini menandai pengakuan siber sebagai domain strategis keenam setelah darat, laut, udara, ruang angkasa, dan elektromagnetik. Gatot Nurmantyo, sebagai tokoh kunci, menekankan bahwa Satsiber dibentuk untuk menjamin ketahanan siber di tengah ancaman "teroris siber" yang dapat mengganggu operasional militer. Brigadir Jenderal TNI (Mar) Markos diangkat sebagai komandan pertama, bertugas menyelenggarakan operasi siber defensif dan ofensif.
 
-Proses pembentukan melibatkan pengembangan organisasi dan tugas (orgas) baru, termasuk rekrutmen personel multi-korps (dari TNI AD, AL, AU) dengan keahlian IT, pelatihan khusus, dan integrasi dengan BSSN yang dibentuk pada 2017. Timeline utama:
-- 1946: Awal Dinas Code sebagai cikal bakal komunikasi aman.
-- 1972: Lembaga Sandi Negara, integrasi sandi dan elektronik.
-- 2015: Perpres No. 97/2015, landasan kebijakan pertahanan siber.
-- 2017: Pembentukan BSSN dan peresmian Satsiber TNI pada 13 Oktober.
-- 2018-2019: Pembentukan satuan siber di matra, seperti Pussansiad TNI AD pada 26 Desember 2019.
+Proses pembentukan melibatkan pengembangan organisasi dan tugas (orgas) baru, termasuk rekrutmen personel multi-korps (dari TNI AD, AL, AU) dengan keahlian IT, pelatihan khusus, dan integrasi dengan BSSN yang dibentuk pada 2017.
 
 Evolusi dari Satkom dan Diskomlek ke Satsiber mencerminkan transisi dari komunikasi analog ke digital, dengan fokus pada pencegahan, respons, dan pemulihan serangan siber. Proses ini didukung oleh kolaborasi internasional dan tren global, memastikan TNI siap menghadapi perang hibrida.
 
@@ -200,20 +195,20 @@ Dengan menerapkan saran-saran ini, Satsiber TNI dapat terus memperkuat posisinya
 
 ## Daftar Pustaka
 
-1. Kompas.com. (2025). *Sejarah Lahirnya Satsiber TNI, Apa Pertimbangan Dibentuk?*. Diakses dari https://www.kompas.com/tren/read/2025/09/09/153000065/sejarah-lahirnya-satsiber-tni-apa-pertimbangan-dibentuk-?page=all
+1. Kompas.com. (2025). *Sejarah Lahirnya Satsiber TNI, Apa Pertimbangan Dibentuk?*.  https://www.kompas.com/tren/read/2025/09/09/153000065/sejarah-lahirnya-satsiber-tni-apa-pertimbangan-dibentuk-?page=all
 
-2. Satsiber TNI. (n.d.). *Sejarah*. Diakses dari https://satsiber-tni.mil.id/sejarah-20181230304
+2. Satsiber TNI. (n.d.). *Sejarah*.  https://satsiber-tni.mil.id/sejarah-20181230304
 
-3. Wikipedia. (n.d.). *Satuan Siber Tentara Nasional Indonesia*. Diakses dari https://id.wikipedia.org/wiki/Satuan_Siber_Tentara_Nasional_Indonesia
+3. Wikipedia. (n.d.). *Satuan Siber Tentara Nasional Indonesia*.  https://id.wikipedia.org/wiki/Satuan_Siber_Tentara_Nasional_Indonesia
 
-4. TNI.mil.id. (2017). *Panglima TNI Resmikan Satuan Siber TNI*. Diakses dari https://tni.mil.id/view-121058-panglima-tni-resmikan-satuan-siber-tni.html
+4. TNI.mil.id. (2017). *Panglima TNI Resmikan Satuan Siber TNI*.  https://tni.mil.id/view-121058-panglima-tni-resmikan-satuan-siber-tni.html
 
-5. Peraturan Presiden Republik Indonesia Nomor 97 Tahun 2015 tentang Kebijakan Umum Pertahanan Negara Tahun 2015-2019. Diakses dari https://peraturan.bpk.go.id/Download/258271/Perpres%20Nomor%2097%20Tahun%202015.pdf
+5. Peraturan Presiden Republik Indonesia Nomor 97 Tahun 2015 tentang Kebijakan Umum Pertahanan Negara Tahun 2015-2019.  https://peraturan.bpk.go.id/Download/258271/Perpres%20Nomor%2097%20Tahun%202015.pdf
 
-6. Undang-Undang Republik Indonesia Nomor 3 Tahun 2002 tentang Pertahanan Negara. Diakses dari https://peraturan.bpk.go.id/Home/Details/43620/uu-no-3-tahun-2002
+6. Undang-Undang Republik Indonesia Nomor 3 Tahun 2002 tentang Pertahanan Negara.  https://peraturan.bpk.go.id/Home/Details/43620/uu-no-3-tahun-2002
 
-7. Peraturan Presiden Republik Indonesia Nomor 133 Tahun 2017 tentang Pembentukan Badan Siber dan Sandi Negara. Diakses dari https://peraturan.bpk.go.id/Home/Details/93310/perpres-no-133-tahun-2017
+7. Peraturan Presiden Republik Indonesia Nomor 133 Tahun 2017 tentang Pembentukan Badan Siber dan Sandi Negara.  https://peraturan.bpk.go.id/Home/Details/93310/perpres-no-133-tahun-2017
 
-8. Buku Putih Pertahanan 2015. Kementerian Pertahanan Republik Indonesia.
+8. Buku Putih Pertahanan 2015. Kementerian Pertahanan Republik Indonesia.  https://www.kemhan.go.id/wp-content/uploads/2022/08/BUKU-PUTIH.pdf
 
-9. Pusat Sandi dan Siber TNI AD. (n.d.). *Sejarah Pussansiad*. Diakses dari https://pussansiad.tni-ad.mil.id/sejarah-pussansiad/
+9. Pusat Sandi dan Siber TNI AD. (n.d.). *Sejarah Pussansiad*.  https://pussansiad.tni-ad.mil.id/sejarah-pussansiad/
