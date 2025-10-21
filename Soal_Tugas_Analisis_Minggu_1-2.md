@@ -108,7 +108,7 @@ Stuxnet bukan hanya malware; ia dirancang untuk merusak peralatan fisik (sentrif
 * **Insiden BETA — Kemungkinan Cyber Warfare (atau operasi yang disponsori negara).** Justifikasi: Malware kustom terarah tanpa tuntutan finansial, target infrastruktur kritis selama ketegangan diplomatik—mengindikasikan tujuan strategis bukan finansial.
 
 #### Diagram Mermaid — Analisis Komparatif
-![gambar1.png](images/gambar1.png)
+<img width="1536" height="1024" alt="gambar1" src="https://github.com/user-attachments/assets/b8a2cc38-56ce-40a7-8d0e-3012c747c993" />
 
 ### Tugas 2: Studi Kasus Mendalam – Anatomi Serangan Stuxnet
 
@@ -128,8 +128,7 @@ Stuxnet bukan hanya malware; ia dirancang untuk merusak peralatan fisik (sentrif
 * **Penipuan/Penyamaran:** Menyembunyikan perubahan melalui manipulasi data diagnostik dan log, serta pemicu kondisi tertentu sebelum aktivasi untuk menghindari deteksi awal.
 
 #### Diagram Sekuens Mermaid — Rantai Serangan Stuxnet
-![gambar2.png](images/gambar2.png)
-
+<img width="2654" height="1033" alt="gambar2" src="https://github.com/user-attachments/assets/d9659166-5888-43ba-869d-513b59d8f44b" />
 
 ### Tugas 3: Analisis Kontekstual – Dampak Cyber Warfare pada Pertahanan Maritim Indonesia
 
@@ -160,7 +159,8 @@ Untuk setiap sistem: skenario, vektor, dan konsekuensi:
 * *Konsekuensi strategis:* Kelemahan koordinasi tempur, blind-spot pada situasi taktis, peningkatan risiko kesalahan operasi, dan potensi eksploitasi oleh lawan selama krisis.
 
 #### Diagram Mermaid — Analisis Dampak Maritim
-![gambar3.png](images/gambar3.png)
+<img width="2840" height="1686" alt="gambar3" src="https://github.com/user-attachments/assets/9a188c16-e737-40b0-9cbc-38af3584ac6d" />
+
 
 ---
 
