@@ -61,25 +61,26 @@
 
 ### II. Esai Singkat (2–4 kalimat masing-masing)
 
-**1. Jelaskan dua karakteristik unik dari Cyberspace sebagai domain peperangan dan mengapa karakteristik tersebut mengubah sifat konflik modern!**
+**6. Jelaskan dua karakteristik unik dari Cyberspace sebagai domain peperangan dan mengapa karakteristik tersebut mengubah sifat konflik modern!**
 
-Cyberspace bersifat *borderless* dan cepat—serangan dapat diluncurkan dari mana saja dan berdampak seketika di seluruh dunia, sehingga respons tradisional yang berbasis wilayah menjadi kurang efektif. Selain itu, tingkat anonimitas dan plausible deniability memungkinkan aktor negara dan non-negara beroperasi dengan risiko geopolitik yang dikurangi, mengaburkan garis antara perang dan kriminalitas.
+Cyberspace memiliki dua karakteristik unik sebagai domain peperangan. Pertama, cyberspace bersifat _borderless_ sehingga serangan dapat dilakukan dari mana saja tanpa keterikatan wilayah, menjadikannya sulit dikendalikan dan diatribusi. Kondisi ini memungkinkan aktor non-negara atau individu untuk melakukan serangan terhadap negara besar tanpa kekuatan militer konvensional. Kedua, operasi di dunia siber berlangsung sangat cepat dan sering kali anonim, sehingga serangan dapat terjadi dalam hitungan detik tanpa terdeteksi. Dua karakteristik ini mengubah sifat konflik modern dari dominasi wilayah fisik menjadi dominasi atas informasi dan infrastruktur digital, menjadikan peperangan siber lebih kompleks, tersembunyi, dan sulit diprediksi.
 
-**2. Apa perbedaan fundamental antara motivasi di balik Cyber Warfare dan Cyber Crime? Berikan satu contoh untuk masing-masing.**
+**7. Apa perbedaan fundamental antara motivasi di balik Cyber Warfare dan Cyber Crime? Berikan satu contoh untuk masing-masing.**
 
-Motivasi Cyber Warfare umumnya strategis dan politis—mencapai tujuan nasional (mis. melemahkan sistem kontrol musuh untuk keuntungan militer). Contoh: serangan terarah untuk menonaktifkan sistem kendali logistik musuh. Cyber Crime didorong oleh keuntungan finansial atau dampak kriminal—mis. pencurian dana via ransomware. Contoh: kelompok kriminil mencuri uang dari perbankan nasional.
+**Cyber Warfare** bertujuan untuk kepentingan politik, militer, atau keamanan nasional dan biasanya dilakukan oleh negara atau aktor yang disponsori negara. Contoh: Serangan siber Rusia terhadap jaringan listrik Ukraina pada tahun 2015 untuk melemahkan infrastruktur nasional lawan.
+**Cyber Crime** bertujuan untuk keuntungan pribadi atau finansial dan dilakukan oleh individu atau kelompok kriminal. Contoh: Serangan ransomware WannaCry tahun 2017 yang mengenkripsi data pengguna dan meminta tebusan dalam bentuk Bitcoin.
 
-**3. Mengapa insiden Morris Worm pada tahun 1988 dianggap sebagai peristiwa penting dalam sejarah keamanan siber, meskipun tidak dirancang untuk tujuan jahat?**
+**8. Mengapa insiden Morris Worm pada tahun 1988 dianggap sebagai peristiwa penting dalam sejarah keamanan siber, meskipun tidak dirancang untuk tujuan jahat?**
 
-Morris Worm menyebar cepat dan menyebabkan gangguan besar pada sistem akademik dan pemerintahan karena bug desain—menunjukkan bahwa perangkat lunak bisa menyebabkan kerusakan serius meski tidak berintent jahat. Insiden ini memicu diskusi hukum, etika, dan pengembangan program respons insiden (CERT).
+Insiden Morris Worm (1988) dianggap penting dalam sejarah keamanan siber karena merupakan wabah malware pertama yang menyebar luas melalui internet, sekaligus membuka mata dunia terhadap kerentanan sistem jaringan global. Peristiwa ini menjadi tonggak penting karena: Mendorong lahirnya _Computer Emergency Response Team_ (CERT) untuk menangani insiden siber dan Menjadi kasus hukum pertama di bawah _Computer Fraud and Abuse Act_ (CFAA) di Amerika Serikat.
 
-**4. Dalam konteks Operasi Siber Militer, apa yang dimaksud dengan Mission Assurance dan mengapa hal ini menjadi tujuan utama dari Operasi Siber Defensif (DCO)?**
+**9. Dalam konteks Operasi Siber Militer, apa yang dimaksud dengan Mission Assurance dan mengapa hal ini menjadi tujuan utama dari Operasi Siber Defensif (DCO)?**
 
-Mission Assurance adalah memastikan kemampuan kritis militer dan infrastruktur tetap tersedia, andal, dan aman untuk melaksanakan misi. DCO bertujuan mencegah, mendeteksi, dan memitigasi ancaman yang dapat mengganggu kemampuan operasional, sehingga kesiapan dan kontinuitas misi tetap terjaga.
+_Mission Assurance_ berarti kemampuan untuk memastikan bahwa misi militer tetap dapat berjalan meskipun terjadi serangan, gangguan, atau kegagalan sistem siber. _Mission Assurance_ memastikan bahwa “misi tetap terlaksana meski dunia digital diserang”, menjadikannya inti dari strategi pertahanan siber militer.
 
-**5. Jelaskan mengapa serangan Stuxnet dianggap sebagai momen "melintasi Rubicon" dalam sejarah cyber warfare!**
+**10. Jelaskan mengapa serangan Stuxnet dianggap sebagai momen "melintasi Rubicon" dalam sejarah cyber warfare!**
 
-Stuxnet bukan hanya malware; ia dirancang untuk merusak peralatan fisik (sentrifugal) dengan presisi dan menyamarkan jejaknya, menunjukkan kemampuan negara untuk menggabungkan operasi siber dengan efek fisik yang terukur. Ini melampaui spionase tradisional dan memasuki ranah sabotase industri terarah—mengubah norma dan ambang keputusan untuk tindakan siber bersifat militer.
+Serangan _Stuxnet_ dianggap sebagai momen “melintasi Rubicon” dalam sejarah cyber warfare karena untuk pertama kalinya serangan siber digunakan secara langsung untuk merusak infrastruktur fisik dunia nyata bukan sekadar mencuri data atau mengganggu jaringan.
 
 ---
 
@@ -89,26 +90,77 @@ Stuxnet bukan hanya malware; ia dirancang untuk merusak peralatan fisik (sentrif
 
 **Insiden**
 
-* **ALFA:** Perbankan nasional dirampok—ransomware dibeli dari pasar gelap; operator dari Eropa Timur; motivasi finansial.
-* **BETA:** Fasilitas pengolahan air mengalami malfungsi PLC—malware kustom, tidak ada ransom, terjadi di tengah ketegangan diplomatik.
+### **Insiden ALFA**
+Sebuah kelompok peretas meretas sistem perbankan nasional dan berhasil mencuri dana nasabah senilai miliaran rupiah. Jejak digital menunjukkan bahwa mereka menggunakan *ransomware* yang dibeli dari pasar gelap dan beroperasi dari Eropa Timur.
 
-#### Analisis per kriteria
+### **Insiden BETA**
+Sebuah fasilitas pengolahan air milik negara tiba-tiba mengalami malfungsi pada sistem kontrol industrinya (PLC). Analisis forensik menemukan *malware* khusus yang sangat canggih dan tidak dikenal sebelumnya. Tidak ada permintaan tebusan, dan kejadian ini terjadi di tengah meningkatnya ketegangan diplomatik dengan negara tetangga.
 
-| Kriteria     | Insiden ALFA                                   | Insiden BETA                                                     |
-| ------------ | ---------------------------------------------- | ---------------------------------------------------------------- |
-| Aktor        | Kelompok kriminal terorganisir (Eropa Timur)   | Diduga aktor negara atau proksi (tingkat kapabilitas tinggi)     |
-| Motivasi     | Finansial (keuntungan langsung)                | Strategis/politik atau sabotase (non-finansial)                  |
-| Target       | Sistem perbankan, data dan saldo nasabah       | Sistem kontrol industri (ICS/PLC) pada fasilitas kritis          |
-| Metodologi   | Ransomware off-the-shelf, replay serangan umum | Malware kustom, rekayasa mendalam, reverse-engineered target PLC |
-| Tujuan Akhir | Uang tebusan / pencucian uang                  | Gangguan operasional, degradasi layanan publik, tekanan politik  |
+---
 
-#### Klasifikasi dan Justifikasi
+## ⚖️ Analisis Komparatif
 
-* **Insiden ALFA — Cyber Crime.** Justifikasi: Aktor dan motivasi finansial, penggunaan toolkit dari pasar gelap, serta pola operasional mirip tindakan kriminal terorganisir.
-* **Insiden BETA — Kemungkinan Cyber Warfare (atau operasi yang disponsori negara).** Justifikasi: Malware kustom terarah tanpa tuntutan finansial, target infrastruktur kritis selama ketegangan diplomatik—mengindikasikan tujuan strategis bukan finansial.
+### **Insiden ALFA – Peretasan Sistem Perbankan Nasional**
+| Kriteria | Analisis |
+|-----------|-----------|
+| **Aktor** | Kelompok peretas dari Eropa Timur (aktor kriminal non-negara) |
+| **Motivasi** | Keuntungan finansial melalui pencurian dana |
+| **Target** | Sistem perbankan nasional dan data nasabah |
+| **Metodologi** | *Ransomware* dari pasar gelap untuk mengenkripsi dan mencuri data |
+| **Tujuan Akhir** | Keuntungan ekonomi pribadi |
+| **Klasifikasi** | 🟢 **Cyber Crime** |
 
-#### Diagram Mermaid — Analisis Komparatif
-<img width="1536" height="1024" alt="gambar1" src="https://github.com/user-attachments/assets/b8a2cc38-56ce-40a7-8d0e-3012c747c993" />
+---
+
+### **Insiden BETA – Sabotase Fasilitas Pengolahan Air**
+| Kriteria | Analisis |
+|-----------|-----------|
+| **Aktor** | Diduga aktor negara atau kelompok yang disponsori negara |
+| **Motivasi** | Tujuan politik dan tekanan diplomatik |
+| **Target** | Infrastruktur vital negara (sistem industri/PLC fasilitas air) |
+| **Metodologi** | *Custom malware* canggih untuk sabotase sistem kontrol industri |
+| **Tujuan Akhir** | Gangguan operasional dan tekanan geopolitik |
+| **Klasifikasi** | 🔴 **Cyber Warfare** |
+
+---
+
+## 🧠 Perbandingan Fundamental
+
+| Aspek | **Insiden ALFA (Cyber Crime)** | **Insiden BETA (Cyber Warfare)** |
+|--------|--------------------------------|----------------------------------|
+| **Aktor** | Kelompok kriminal independen | Negara atau aktor yang disponsori negara |
+| **Motivasi** | Keuntungan finansial | Tujuan politik/militer |
+| **Target** | Bank dan nasabah | Infrastruktur strategis negara |
+| **Metodologi** | *Ransomware* dari pasar gelap | *Malware* custom tingkat tinggi |
+| **Dampak Utama** | Kerugian ekonomi | Gangguan strategis dan diplomatik |
+| **Tujuan Akhir** | Keuntungan pribadi | Dominasi politik dan destabilitas lawan |
+
+---
+
+## 🧩 Diagram Analisis – Mermaid
+
+```mermaid
+flowchart TB
+    subgraph A[Insiden ALFA: Peretasan Bank]
+        A1[Aktor: Kelompok kriminal Eropa Timur]
+        A2[Motivasi: Keuntungan finansial]
+        A3[Target: Sistem perbankan nasional]
+        A4[Metodologi: Ransomware dari pasar gelap]
+        A5[Tujuan Akhir: Pencurian dana nasabah]
+        A7((Klasifikasi: Cyber Crime))
+    end
+
+    subgraph B[Insiden BETA: Sabotase Fasilitas Air]
+        B1[Aktor: Diduga aktor negara]
+        B2[Motivasi: Politik/tekanan diplomatik]
+        B3[Target: Sistem kontrol industri (PLC)]
+        B4[Metodologi: Malware canggih custom]
+        B5[Tujuan Akhir: Gangguan operasional strategis]
+        B7((Klasifikasi: Cyber Warfare))
+    end
+
+    style A7 fill:#66ccff,stroke:#003366,color:#000
+    style B7 fill:#ff9999,stroke:#660000,color:#000
 
 ### Tugas 2: Studi Kasus Mendalam – Anatomi Serangan Stuxnet
 
