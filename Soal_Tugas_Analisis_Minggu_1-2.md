@@ -143,12 +143,11 @@ Sebuah fasilitas pengolahan air milik negara tiba-tiba mengalami malfungsi pada 
 
 **Insiden ALFA** merupakan bentuk Cyber Crime, karena dilakukan oleh aktor non-negara dengan motivasi finansial menggunakan ransomware.
 
-## dikategorikan sebagai Cyber Warfare, karena melibatkan sabotase infrastruktur vital dengan tujuan politik antarnegara.
+dikategorikan sebagai Cyber Warfare, karena melibatkan sabotase infrastruktur vital dengan tujuan politik antarnegara.
 
 
 ### Tugas 2: Studi Kasus Mendalam – Anatomi Serangan Stuxnet
 
-#### Fase Utama (Kill Chain) — Stuxnet
 
 ##  Rantai Serangan (Kill Chain) Stuxnet
 
@@ -242,7 +241,9 @@ Dampak Cyber Warfare terhadap domain maritim Indonesia berpotensi mengancam:
 2. Ekonomi nasional, dengan melumpuhkan pelabuhan utama.
 3. Kedaulatan teritorial, melalui gangguan komunikasi dan navigasi kapal komersial.
 
-Pertahanan siber maritim yang kuat menjadi kunci untuk melindungi kepentingan strategis Indonesia di samudra.
+
+ 
+pertahanan siber maritim yang kuat menjadi kunci untuk melindungi kepentingan strategis Indonesia di samudra.
 ---
 
 **Selesai.**
