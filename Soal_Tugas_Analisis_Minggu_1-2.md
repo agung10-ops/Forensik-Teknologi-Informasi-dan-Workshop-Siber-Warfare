@@ -228,11 +228,10 @@ Tugas ini mengidentifikasi tiga aset digital maritim yang rentan terhadap serang
 
 ### Penjelasan Diagram Alur
 
-Aktor Ancaman: meliputi Peretas Didukung Negara, Sindikat Kriminal, dan Ancaman Internal sebagai pelaku utama serangan.
-Vektor Serangan: Aktor menggunakan metode spesifik seperti GPS Spoofing/Jamming, Malware/Ransomware, dan Manipulasi Data/Injeksi Sinyal.
-Aset Maritim Rentan: Vektor serangan menargetkan Sistem Navigasi GPS KRI, SCADA Pelabuhan Utama, dan AIS Kapal Komersial.
-Konsekuensi Strategis: Setiap aset yang disusupi menyebabkan dampak spesifik, seperti gangguan militer, kerugian ekonomi, atau risiko kedaulatan.
----
+**Aktor Ancaman:** meliputi Peretas Didukung Negara, Sindikat Kriminal, dan Ancaman Internal sebagai pelaku utama serangan.
+**Vektor Serangan:** Aktor menggunakan metode spesifik seperti GPS Spoofing/Jamming, Malware/Ransomware, dan Manipulasi Data/Injeksi Sinyal.
+**Aset Maritim Rentan:** Vektor serangan menargetkan Sistem Navigasi GPS KRI, SCADA Pelabuhan Utama, dan AIS Kapal Komersial.
+**Konsekuensi Strategis:** Setiap aset yang disusupi menyebabkan dampak spesifik, seperti gangguan militer, kerugian ekonomi, atau risiko kedaulatan.
 
 ### Kesimpulan
 
