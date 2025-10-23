@@ -88,8 +88,6 @@ Serangan _Stuxnet_ dianggap sebagai momen “melintasi Rubicon” dalam sejarah 
 
 ### Tugas 1: Analisis Komparatif – Cyber Warfare vs. Cyber Crime
 
-**Insiden**
-
 ### **Insiden ALFA**
 Sebuah kelompok peretas meretas sistem perbankan nasional dan berhasil mencuri dana nasabah senilai miliaran rupiah. Jejak digital menunjukkan bahwa mereka menggunakan *ransomware* yang dibeli dari pasar gelap dan beroperasi dari Eropa Timur.
 
@@ -98,7 +96,7 @@ Sebuah fasilitas pengolahan air milik negara tiba-tiba mengalami malfungsi pada 
 
 ---
 
-## ⚖️ Analisis Komparatif
+##  Analisis Komparatif
 
 ### **Insiden ALFA – Peretasan Sistem Perbankan Nasional**
 | Kriteria | Analisis |
@@ -124,7 +122,7 @@ Sebuah fasilitas pengolahan air milik negara tiba-tiba mengalami malfungsi pada 
 
 ---
 
-## 🧠 Perbandingan Fundamental
+##  Perbandingan Fundamental
 
 | Aspek | **Insiden ALFA (Cyber Crime)** | **Insiden BETA (Cyber Warfare)** |
 |--------|--------------------------------|----------------------------------|
@@ -137,83 +135,114 @@ Sebuah fasilitas pengolahan air milik negara tiba-tiba mengalami malfungsi pada 
 
 ---
 
-## 🧩 Diagram Analisis – Mermaid
+##  Diagram Analisis – Mermaid
 
-```mermaid
-flowchart TB
-    subgraph A[Insiden ALFA: Peretasan Bank]
-        A1[Aktor: Kelompok kriminal Eropa Timur]
-        A2[Motivasi: Keuntungan finansial]
-        A3[Target: Sistem perbankan nasional]
-        A4[Metodologi: Ransomware dari pasar gelap]
-        A5[Tujuan Akhir: Pencurian dana nasabah]
-        A7((Klasifikasi: Cyber Crime))
-    end
+<img width="1536" height="1024" alt="gambar 1" src="https://github.com/user-attachments/assets/874070cd-edd9-441c-b6e5-12e171e98d99" />
 
-    subgraph B[Insiden BETA: Sabotase Fasilitas Air]
-        B1[Aktor: Diduga aktor negara]
-        B2[Motivasi: Politik/tekanan diplomatik]
-        B3[Target: Sistem kontrol industri (PLC)]
-        B4[Metodologi: Malware canggih custom]
-        B5[Tujuan Akhir: Gangguan operasional strategis]
-        B7((Klasifikasi: Cyber Warfare))
-    end
+##  Kesimpulan
 
-    style A7 fill:#66ccff,stroke:#003366,color:#000
-    style B7 fill:#ff9999,stroke:#660000,color:#000
+**Insiden ALFA** merupakan bentuk Cyber Crime, karena dilakukan oleh aktor non-negara dengan motivasi finansial menggunakan ransomware.
+
+## dikategorikan sebagai Cyber Warfare, karena melibatkan sabotase infrastruktur vital dengan tujuan politik antarnegara.
+
 
 ### Tugas 2: Studi Kasus Mendalam – Anatomi Serangan Stuxnet
 
 #### Fase Utama (Kill Chain) — Stuxnet
 
-1. **Reconnaissance & Target Profiling**: Identifikasi vendor SCADA/PLC (Siemens) dan konfigurasi sentrifugal; memetakan perangkat lunak dan versi yang rentan.
-2. **Delivery (Bridging the Air Gap)**: Penyebaran awal melalui USB removable (infected USB flash drive) untuk menjangkau workstation yang terisolasi.
-3. **Exploitation**: Memanfaatkan beberapa zero-day Windows untuk eskalasi hak dan eksekusi kode.
-4. **Installation & Lateral Movement**: Menyebar ke jaringan lokal dan memasang modul yang menargetkan software PLC (STEP7).
-5. **Command & Control / Target Recognition**: Memverifikasi keberadaan target (PLC dan konfigurasi sentrifugal) sebelum aktivasi; menghindari deteksi dengan fingerprinting.
-6. **Actions on Objectives (Sabotage)**: Mengubah frekuensi/pulse yang dikirim ke PLC sehingga sentrifugal berputar pada kondisi yang merusak (sabotase fisik).
-7. **Covering Tracks**: Memanipulasi logging dan mengirimkan sinyal palsu ke monitoring sehingga operator melihat kondisi normal.
+##  Rantai Serangan (Kill Chain) Stuxnet
 
-#### Dua Mekanisme Kunci
+| Tahap | Penjelasan |
+|--------|------------|
+| **1. Infiltrasi Awal (Initial Infection)** | Stuxnet disebarkan melalui **USB flash drive** yang digunakan oleh teknisi di fasilitas nuklir Iran. Hal ini memungkinkan malware **menembus sistem yang terisolasi (air-gapped)** karena komputer industri tidak terhubung langsung ke internet. |
+| **2. Eksekusi dan Penyebaran Lokal (Local Propagation)** | Setelah USB terhubung ke komputer Windows, Stuxnet memanfaatkan **zero-day vulnerabilities** untuk mengeksekusi dirinya sendiri dan menyebar secara otomatis ke workstation lain di jaringan internal. |
+| **3. Eskalasi dan Pengambilalihan (Privilege Escalation & Control)** | Malware kemudian mencari perangkat lunak industri **Siemens Step7** yang digunakan untuk mengontrol PLC (Programmable Logic Controller). Setelah menemukannya, Stuxnet memodifikasi kode PLC tanpa terdeteksi oleh operator. |
+| **4. Sabotase Fisik (Physical Sabotage)** | Kode yang dimodifikasi membuat **centrifuge uranium berputar di luar batas aman** (terlalu cepat atau terlalu lambat), menyebabkan kerusakan fisik pada mesin. Namun, Stuxnet juga mengirim **data palsu ke ruang kontrol**, sehingga operator melihat semua sistem tampak normal. |
+| **5. Penyembunyian dan Persistensi (Deception & Stealth)** | Stuxnet menyembunyikan aktivitasnya dengan **memalsukan data sensor** dan **menghapus jejak digitalnya** agar tidak terdeteksi oleh antivirus atau sistem keamanan jaringan. |
+| **6. Tujuan Akhir (Mission Accomplished)** | Tujuan utama tercapai: **menunda program nuklir Iran** dengan merusak peralatan tanpa menimbulkan ledakan atau korban jiwa langsung — sebuah bentuk **cyber warfare presisi tinggi**. |
 
-* **Sabotase fisik:** Modifikasi logika PLC sehingga peralatan industri (sentrifugal) beroperasi di luar parameter aman, menyebabkan kerusakan fisik.
-* **Penipuan/Penyamaran:** Menyembunyikan perubahan melalui manipulasi data diagnostik dan log, serta pemicu kondisi tertentu sebelum aktivasi untuk menghindari deteksi awal.
+---
 
-#### Diagram Sekuens Mermaid — Rantai Serangan Stuxnet
-<img width="2654" height="1033" alt="gambar2" src="https://github.com/user-attachments/assets/d9659166-5888-43ba-869d-513b59d8f44b" />
+##  Dua Mekanisme Kunci
+
+1. **Sabotase Fisik:**  
+   Stuxnet memanipulasi instruksi ke PLC Siemens untuk mengubah kecepatan centrifuge, menyebabkan kegagalan mekanik tanpa intervensi manusia.
+
+2. **Penipuan / Penyembunyian Serangan:**  
+   Malware mengirimkan data palsu ke sistem pemantauan agar tampak bahwa operasi berjalan normal, meskipun sebenarnya mesin telah dirusak.
+
+---
+
+##  Diagram Sekuens (Sequence Diagram) – Rantai Serangan Stuxnet
+
+<img width="1536" height="1024" alt="gambar 2" src="https://github.com/user-attachments/assets/647665de-fae7-4ea8-8fc2-c252f0ba7498" />
+
+
 
 ### Tugas 3: Analisis Kontekstual – Dampak Cyber Warfare pada Pertahanan Maritim Indonesia
 
-#### Tiga Sistem/Aset Yang Paling Rentan & Kritis
+##  Deskripsi Umum
+Sebagai negara kepulauan terbesar di dunia, Indonesia sangat bergantung pada keamanan dan stabilitas domain maritim. 
+Serangan siber terhadap sistem maritim dapat mengganggu operasi militer, perdagangan, serta infrastruktur pelabuhan yang vital bagi perekonomian nasional.  
 
-1. **Sistem Navigasi dan Autopilot Kapal (ECDIS / INS autopilot pada KRI & Kapal Komersial)**
-2. **Sistem Kontrol Terminal Pelabuhan (Port Terminal Operating System & ICS di crane/pemindah kontainer)**
-3. **Sistem Komunikasi dan Komando KRI (C2 / SATCOM / Link-data pertempuran)**
+Tugas ini mengidentifikasi tiga aset digital maritim yang rentan terhadap serangan siber serta konsekuensi strategis yang mungkin timbul.
 
-Untuk setiap sistem: skenario, vektor, dan konsekuensi:
+---
 
-**1) ECDIS / Autopilot (KRI & Kapal Komersial)**
+##  Aset & Sistem Maritim Rentan
 
-* *Skenario serangan:* Aktor menyusup ke pembaruan peta digital yang dipalsukan atau memanfaatkan kerentanan firmware autopilot, mengarahkan kapal ke rute salah atau zona berbahaya.
-* *Vektor:* Pembaruan peta berbahaya via USB, exploit firmware, supply-chain compromise.
-* *Konsekuensi strategis:* Tabrakan, gangguan jalur pelayaran, gangguan logistik nasional, potensi korban jiwa, dan hilangnya kepercayaan pada rute strategis.
+| No | Aset / Sistem | Deskripsi Singkat |
+|----|----------------|------------------|
+| 1 | **Sistem Navigasi GPS Kapal Perang (KRI)** | Digunakan untuk menentukan posisi dan koordinat operasi militer laut. |
+| 2 | **SCADA Pelabuhan Utama (Port Automation System)** | Mengontrol operasi bongkar muat, logistik, dan sistem crane otomatis. |
+| 3 | **AIS (Automatic Identification System) Kapal Komersial** | Sistem komunikasi identitas dan posisi kapal di perairan nasional. |
 
-**2) Sistem Kontrol Terminal Pelabuhan (Crane ICS)**
+---
 
-* *Skenario serangan:* Malware mengendalikan crane sehingga kontainer salah alokasi atau infrastruktur pelabuhan macet.
-* *Vektor:* Phishing ke operator, compromise VPN/remote access, exploit ICS khusus.
-* *Konsekuensi strategis:* Terhambatnya impor/ekspor, kerugian ekonomi besar, backlog logistik nasional, dan ancaman keamanan rantai suplai.
+##  Skenario Serangan Siber dan Dampaknya
 
-**3) Sistem Komunikasi & C2 KRI (SATCOM / Link-data)**
+### **A. Sistem Navigasi GPS KRI**
+- **Vektor Serangan:** *GPS Spoofing / Jamming*  
+- **Skenario:** Penyerang memalsukan sinyal GPS sehingga kapal perang tersesat dari jalur operasi atau memasuki wilayah berbahaya.  
+- **Konsekuensi Strategis:** Gangguan navigasi armada militer, potensi konflik lintas batas, dan hilangnya keunggulan taktis di laut.  
 
-* *Skenario serangan:* Interferensi atau spoofing data komando sehingga kapal menerima perintah palsu atau kehilangan kemampuan berbagi intelijen real-time.
-* *Vektor:* Jamming, spoofing GPS, compromise pada ground station SATCOM, supply-chain malware pada perangkat komunikasi.
-* *Konsekuensi strategis:* Kelemahan koordinasi tempur, blind-spot pada situasi taktis, peningkatan risiko kesalahan operasi, dan potensi eksploitasi oleh lawan selama krisis.
+---
 
-#### Diagram Mermaid — Analisis Dampak Maritim
-<img width="2840" height="1686" alt="gambar3" src="https://github.com/user-attachments/assets/9a188c16-e737-40b0-9cbc-38af3584ac6d" />
+### **B. SCADA Pelabuhan Utama**
+- **Vektor Serangan:** *Malware / Ransomware / Supply Chain Attack*  
+- **Skenario:** Sistem kontrol otomatis di pelabuhan disusupi malware yang mengacaukan operasi logistik nasional.  
+- **Konsekuensi Strategis:** Lumpuhnya rantai pasok maritim, keterlambatan ekspor-impor, serta kerugian ekonomi besar bagi sektor perdagangan nasional.  
+
+---
+
+### **C. AIS Kapal Komersial**
+- **Vektor Serangan:** *Data Manipulation / Signal Injection*  
+- **Skenario:** Data posisi kapal diubah atau disembunyikan, menyebabkan tabrakan atau penyalahgunaan jalur laut oleh kapal asing.  
+- **Konsekuensi Strategis:** Kehilangan kendali atas jalur perdagangan strategis dan risiko pelanggaran kedaulatan laut Indonesia.  
+
+---
+
+## Diagram Analisis Dampak Maritim (Mermaid)
+
+<img width="1919" height="622" alt="Screenshot 2025-10-23 230926" src="https://github.com/user-attachments/assets/011f4e8c-ad8c-4675-be6e-65171ca402b0" />
 
 
+### Penjelasan Diagram Alur
+
+**Aktor Ancaman:** Meliputi Peretas Didukung Negara, Sindikat Kriminal, dan Ancaman Internal sebagai pelaku utama serangan.
+**Vektor Serangan:** Aktor menggunakan metode spesifik seperti GPS Spoofing/Jamming, Malware/Ransomware, dan Manipulasi Data/Injeksi Sinyal.
+**Aset Maritim Rentan:** Vektor serangan menargetkan Sistem Navigasi GPS KRI, SCADA Pelabuhan Utama, dan AIS Kapal Komersial.
+**Konsekuensi Strategis:** Setiap aset yang disusupi menyebabkan dampak spesifik, seperti gangguan militer, kerugian ekonomi, atau risiko kedaulatan.
+---
+
+### Kesimpulan
+
+Dampak Cyber Warfare terhadap domain maritim Indonesia berpotensi mengancam:
+1. Keamanan nasional, melalui manipulasi operasi militer laut.
+2. Ekonomi nasional, dengan melumpuhkan pelabuhan utama.
+3. Kedaulatan teritorial, melalui gangguan komunikasi dan navigasi kapal komersial.
+
+Pertahanan siber maritim yang kuat menjadi kunci untuk melindungi kepentingan strategis Indonesia di samudra.
 ---
 
 **Selesai.**
