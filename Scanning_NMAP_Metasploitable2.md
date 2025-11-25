@@ -152,9 +152,9 @@ Target *192.168.100.11* memilikibanyak port yang dan hampir seluruh *service* me
 # Tabel Kerentanan Port Metasploitable 2
 
   --------------------------------------------------------------------------------
-  Peringkat   Port          Layanan      Tingkat Bahaya     Alasan Kerentanan
+  |Peringkat|   |Port|          |Layanan      |Tingkat Bahaya|     |Alasan Kerentanan|
   ----------- ------------- ------------ ------------------ ----------------------
-  1           6667          UnrealIRCd   Sangat Kritis      Memiliki backdoor
+  |1|           |6667|          |UnrealIRCd|   |Sangat Kritis|      |Memiliki backdoor|
                                                             bawaan → RCE instan
 
   2           21            vsFTPd 2.3.4 Sangat Kritis      Login ":)" membuka
