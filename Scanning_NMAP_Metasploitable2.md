@@ -59,7 +59,7 @@ Hostname : **target**
 
 22. 8180/tcp (HTTP alternatif/unknown): Biasanya digunakan untuk aplikasi web pada port selain 80.
 
-# ⚠ Kesimpulan Keamanan
+# Kesimpulan Keamanan
 
 Target *192.168.100.11* memilikibanyak port yang dan hampir seluruh *service* menggunakan versi lama (Outdated). Setiap port di atas mengindikasikan layanan tertentu yang bisa menjadi target eksploitasi sesuai skenario pembelajaran cyber security dan penetration testing. Ini adalah ciri khas **Metasploitable2**, sebuah sistem yang dirancang secara *vulnerable* untuk tujuan pelatihan *penetration testing* dan edukasi keamanan. 
 
@@ -154,47 +154,63 @@ Target *192.168.100.11* memilikibanyak port yang dan hampir seluruh *service* me
   --------------------------------------------------------------------------------
   | Peringkat | Port | Layanan | Tingkat Bahaya | Alasan Kerentanan |
   |-----------|------|---------|----------------|-------------------|
-  | 1 | 6667 | UnrealIRCd | Sangat Kritis | Memiliki backdoor |
-                                                            bawaan → RCE instan
-
-  2           21            vsFTPd 2.3.4 Sangat Kritis      Login ":)" membuka
-                                                            shell backdoor
-                                                            otomatis
-
-  3           3632          distccd      Sangat Kritis      RCE mudah dengan satu
-                                                            perintah/metasploit
-
-  4           8180          Apache       Kritis             Default credentials
-                            Tomcat                          memungkinkan upload
-                                                            shell
-
-  5           139/445       Samba        Kritis             Vulnerability usermap
-                                                            script → root shell
-
-  6           512/513/514   rlogin/rsh   Tinggi             Autentikasi lemah,
-                                                            bisa login tanpa
-                                                            password
-
-  7           3306          MySQL        Tinggi             Password default /
-                                                            kosong, akses DB penuh
-
-  8           5432          PostgreSQL   Tinggi             Konfigurasi lama →
-                                                            default credential
-
-  9           80            Apache Web   Sedang             Banyak aplikasi
-                            Server                          vulnerable
-                                                            (DVWA/Mutillidae)
-
-  10          5900          VNC          Sedang             Kadang tanpa password,
-                                                            remote desktop terbuka
-
-  11          22            SSH          Rendah             Versi lama, namun
-                                                            tidak mudah
-                                                            dieksploitasi
+  | 1 | 6667 | UnrealIRCd | Sangat Kritis | Memiliki backdoor bawaan → RCE instan |
+  | 2 | 21 | vsFTPd 2.3.4 | Sangat Kritis | Login ":)" membuka  shell backdoor otomatis |
+  | 3 | 3632 | distccd | Sangat Kritis | RCE mudah dengan satu perintah/metasploit |     
+  | 4 | 8180 | Apache tomcat | Kritis | Default credentials memungkinkan upload shell |
+  | 5 | 139/445 | Samba | Kritis | Vulnerability usermap script → root shell |
+  | 6 | 512/513/514 | rlogin/rsh | Tinggi | Autentikasi lemah, bisa login tanpa password |
+  | 7 | 3306 | MySQL | Tinggi | Password default / kosong, akses DB penuh |
+  | 8 | 5432 | PostgreSQL | Tinggi | Konfigurasi lama → default credential |
+  | 9 | 80 | Apache Web | Sedang | Banyak aplikasi Server vulnerable (DVWA/Mutillidae) |
+  | 10 | 5900 | VNC | Sedang | Kadang tanpa password, remote desktop terbuka |
+  | 11 | 22 | SSH | Rendah | Versi lama, namun tidak mudah dieksploitasi |
   --------------------------------------------------------------------------------
 
 
 Hasil pemindaian terhadap Metasploitable 2 menunjukkan bahwa sistem memiliki banyak layanan lama dan rentan yang terbuka, sehingga menciptakan permukaan serangan yang sangat luas. Beberapa port seperti UnrealIRCd (6667), vsFTPd 2.3.4 (21), dan distccd (3632) termasuk yang paling kritis karena memungkinkan eksekusi perintah jarak jauh secara langsung tanpa autentikasi yang kuat. Layanan lain seperti Tomcat Manager, Samba, serta database MySQL dan PostgreSQL juga terbuka dengan konfigurasi lemah sehingga mudah disalahgunakan. Temuan ini menegaskan bahwa Metasploitable 2 berada dalam kondisi yang sangat tidak aman dan dapat dieksploitasi dengan berbagai teknik, sehingga cocok digunakan sebagai lingkungan pembelajaran terhadap analisis kerentanan dan eksploitasi sistem.
 
----
+# Melakukan Login ke Target 
+
+**Command : `rlogin target**
+
+<img width="959" height="384" alt="Screenshot 2025-11-18 152453" src="https://github.com/user-attachments/assets/d17e9bcc-ce11-4a78-944c-a87b7c378f76" />
+
+**Hasil Pengujian Akses RLOGIN Berhasil**
+
+Hasil eksekusi menunjukkan bahwa koneksi rlogin berhasil, ditandai dengan munculnya prompt: **root@metasploitable:~#** Ini berarti sistem target mengizinkan login remote ke akun root melalui protokol rlogin.
+Tanpa password. Ini merupakan kerentanan serius.
+
+**Informasi Sistem**
+Setelah berhasil login, sistem menampilkan informasi:
+- OS: Ubuntu 8.04 LTS (Hardy Heron)
+- Kernel: 2.6.24-16-server (April 2008)
+- Arsitektur: i686
+Kernel dan sistem operasi ini sangat tua, tidak lagi menerima patch keamanan, dan rentan terhadap banyak eksploit.
+
+**Informasi Jaringan IPv6**
+Sistem menampilkan tabel multicast IPv6:
+_::1         ff00::0         ff02::2
+fe00::0     ff02::1         ff02::3_
+Ini adalah output bawaan yang menunjukkan rute dan grup multicast IPv6.
+Informasi ini bukan error, hanya menunjukkan konfigurasi default jaringan IPv6.
+
+**Analisis Kerentanan rlogin / rsh Vulnerability**
+Layanan rlogin bergantung pada file konfigurasi _.rhosts atau /etc/hosts.equiv._
+Jika host pengguna tercantum dalam file tersebut, maka sistem memberikan full access tanpa password.
+
+Risiko utama:
+
+| Risiko | Dampak |
+|--------|--------|
+| Tidak ada enkripsi | Semua data login dan perintah dikirim plaintext. |
+| Autentikasi lemah	| Dapat dimanipulasi menggunakan IP spoofing. |
+| Root access terbuka	| Memberikan kendali penuh ke penyerang. |
+Kerentanan ini sangat kritis dan sering dipakai untuk Remote Code Execution (RCE).
+
+**Kesimpulan**
+
+Hasil analisis menunjukkan bahwa layanan rlogin pada Metasploitable 2 sangat rentan dan memungkinkan akses penuh ke sistem tanpa autentikasi. Keberhasilan login langsung sebagai root menandakan tidak adanya mekanisme keamanan yang memadai. Ini termasuk salah satu kerentanan tingkat kritikal, karena memungkinkan pengambilalihan sistem secara penuh dari jarak jauh.
+
+
 # Directed by: Agung Kurniawan
