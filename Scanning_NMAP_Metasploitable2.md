@@ -149,8 +149,7 @@ Target *192.168.100.11* memilikibanyak port yang dan hampir seluruh *service* me
 **8000–9000 range – Java RMI / jmx / rmiregistry**
 - Bisa dipakai untuk remote Java object injection.
 
-# Kesimpulan Port Paling Berbahaya
-
+# Tabel Kerentanan Port Metasploitable 2
 
   --------------------------------------------------------------------------------
   Peringkat   Port          Layanan      Tingkat Bahaya     Alasan Kerentanan
@@ -193,7 +192,7 @@ Target *192.168.100.11* memilikibanyak port yang dan hampir seluruh *service* me
                                                             tidak mudah
                                                             dieksploitasi
   --------------------------------------------------------------------------------
----
+
 
 Hasil pemindaian terhadap Metasploitable 2 menunjukkan bahwa sistem memiliki banyak layanan lama dan rentan yang terbuka, sehingga menciptakan permukaan serangan yang sangat luas. Beberapa port seperti UnrealIRCd (6667), vsFTPd 2.3.4 (21), dan distccd (3632) termasuk yang paling kritis karena memungkinkan eksekusi perintah jarak jauh secara langsung tanpa autentikasi yang kuat. Layanan lain seperti Tomcat Manager, Samba, serta database MySQL dan PostgreSQL juga terbuka dengan konfigurasi lemah sehingga mudah disalahgunakan. Temuan ini menegaskan bahwa Metasploitable 2 berada dalam kondisi yang sangat tidak aman dan dapat dieksploitasi dengan berbagai teknik, sehingga cocok digunakan sebagai lingkungan pembelajaran terhadap analisis kerentanan dan eksploitasi sistem.
 
